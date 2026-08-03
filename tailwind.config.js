@@ -1,0 +1,75 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+      },
+      colors: {
+        forest: {
+          50: '#f0f9f2',
+          100: '#d8f3dc',
+          200: '#a8e0b4',
+          300: '#6fc884',
+          400: '#3aaf55',
+          500: '#2d8f42',
+          600: '#237335',
+          700: '#1a5c2a',
+          800: '#144722',
+          900: '#0d3318',
+          950: '#071a0d',
+        },
+        gold: {
+          50: '#fdf9ec',
+          100: '#faf0cc',
+          200: '#f5e099',
+          300: '#f0cf66',
+          400: '#ebbd33',
+          500: '#c9a227',
+          600: '#a8821f',
+          700: '#876218',
+          800: '#664810',
+          900: '#452f08',
+        },
+        cream: {
+          50: '#fdfcf8',
+          100: '#faf6ed',
+          200: '#f5f0e0',
+          300: '#ede5cc',
+          400: '#e0d0a8',
+          500: '#c9b87a',
+        },
+        earth: {
+          100: '#f2ebe0',
+          200: '#e8dcc8',
+          300: '#c9a97a',
+          400: '#a87d4a',
+          500: '#7a5530',
+        },
+      },
+      animation: {
+        'fade-in': 'fadeIn 0.6s ease-out',
+        'slide-up': 'slideUp 0.7s ease-out',
+        'slide-down': 'slideDown 0.4s ease-out',
+        'scale-in': 'scaleIn 0.3s ease-out',
+        float: 'float 4s ease-in-out infinite',
+        'pulse-slow': 'pulse 3s ease-in-out infinite',
+      },
+      keyframes: {
+        fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
+        slideUp: { '0%': { opacity: '0', transform: 'translateY(30px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
+        slideDown: { '0%': { opacity: '0', transform: 'translateY(-10px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
+        scaleIn: { '0%': { opacity: '0', transform: 'scale(0.95)' }, '100%': { opacity: '1', transform: 'scale(1)' } },
+        float: { '0%, 100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-8px)' } },
+      },
+      boxShadow: {
+        card: '0 4px 24px rgba(0,0,0,0.07)',
+        'card-hover': '0 12px 48px rgba(0,0,0,0.13)',
+        green: '0 4px 20px rgba(26,92,42,0.25)',
+        gold: '0 4px 20px rgba(201,162,39,0.3)',
+      },
+    },
+  },
+  plugins: [],
+};
